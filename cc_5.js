@@ -33,3 +33,8 @@ function processPayroll(employee) {
     netPay: netPay.toFixed(2)
   };
 }
+
+employees.forEach(employee => {
+  const payroll = processPayroll(employee);
+  console.log(payroll);
+});
